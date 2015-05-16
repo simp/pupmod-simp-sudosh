@@ -1,0 +1,9 @@
+---
+fixtures:
+  symlinks:
+    sudosh: "#{source_dir}"
+    common: "#{source_dir}/../common"
+    concat: "#{source_dir}/../concat"
+    logrotate: "#{source_dir}/../logrotate"
+    rsyslog: "#{source_dir}/../rsyslog"
+    stdlib: "#{source_dir}/../stdlib"
