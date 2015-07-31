@@ -20,21 +20,20 @@
 # * Trevor Vaughan <tvaughan@onyxpont.com>
 #
 class sudosh {
-  include 'logrotate'
-  include 'rsyslog'
+  include '::logrotate'
+  include '::rsyslog'
 
   package { 'sudosh2':
     ensure => 'latest'
   }
 
   # named '0sudosh' so that it appears before the defaults
-  rsyslog::add_rule { '0sudosh':
-    rule => "
-
-if \$programname == 'sudosh' then \t\t /var/log/sudosh.log
-& ~
-"
+  rsyslog::rule::local { '0sudosh':
+    rule            => 'if ($programname == \'sudosh\') then',
+    target_log_file => '/var/log/sudosh.log',
+    stop_processing => true
   }
+
 
   # Don't forget the logrotate rule!
   logrotate::add { 'sudosh':
