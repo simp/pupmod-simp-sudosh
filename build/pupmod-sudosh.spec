@@ -1,12 +1,12 @@
 Summary: Sudosh Puppet Module
 Name: pupmod-sudosh
 Version: 4.1.0
-Release: 2
+Release: 3
 License: Apache License, Version 2.0
 Group: Applications/System
 Source: %{name}-%{version}-%{release}.tar.gz
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires: pupmod-rsyslog >= 2.0.0-0
+Requires: pupmod-rsyslog >= 5.0.0
 Requires: pupmod-logrotate >= 2.0.0-0
 Requires: puppet >= 3.3.0
 Buildarch: noarch
@@ -54,6 +54,9 @@ fi
 # Post uninstall stuff
 
 %changelog
+* Fri Jul 31 2015 Kendall Moore <kmoore@keywcorp.com> - 4.1.0-3
+- Updated to use the new rsyslog module.
+
 * Fri Feb 27 2015 Trevor Vaughan <tvaughan@onyxpoint.com> - 4.1.0-2
 - Updated to use the new 'simp' environment.
 - Changed calls directly to /etc/init.d/rsyslog to '/sbin/service rsyslog' so
