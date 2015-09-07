@@ -1,0 +1,50 @@
+{
+  "name":    "pupmod-simp-sudosh",
+  "version": "4.1.0",
+  "author":  "simp",
+  "summary": "Manage sudosh",
+  "license": "Apache-2.0",
+  "source":  "https://github.com/simp/pupmod-simp-sudosh",
+  "project_page": "https://github.com/simp/pupmod-simp-sudosh",
+  "issues_url":   "https://simp-project.atlassian.net",
+  "tags": [ "simp", "sudosh" ],
+  "dependencies": [
+    {
+      "name": "simp-common",
+      "version_requirement": ">= 4.2.0"
+    },
+    {
+      "name": "simp-concat",
+      "version_requirement": ">= 4.0.0"
+    },
+    {
+      "name": "simp-logrotate",
+      "version_requirement": ">= 4.1.0"
+    },
+    {
+      "name": "simp-rsyslog",
+      "version_requirement": ">= 5.0.0"
+    },
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.1.0"
+    }
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
