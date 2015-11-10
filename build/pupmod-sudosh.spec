@@ -1,7 +1,7 @@
 Summary: Sudosh Puppet Module
 Name: pupmod-sudosh
 Version: 4.1.0
-Release: 3
+Release: 4
 License: Apache License, Version 2.0
 Group: Applications/System
 Source: %{name}-%{version}-%{release}.tar.gz
@@ -54,6 +54,9 @@ fi
 # Post uninstall stuff
 
 %changelog
+* Mon Nov 09 2015 Chris Tessmer <chris.tessmer@onypoint.com> - 4.1.0-4
+- migration to simplib and simpcat (lib/ only)
+
 * Fri Jul 31 2015 Kendall Moore <kmoore@keywcorp.com> - 4.1.0-3
 - Updated to use the new rsyslog module.
 
