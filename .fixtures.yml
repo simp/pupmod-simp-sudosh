@@ -5,6 +5,7 @@ fixtures:
     augeasproviders_core: "git://github.com/simp/augeasproviders_core"
     augeasproviders_grub: "git://github.com/simp/augeasproviders_grub"
     common: "git://github.com/simp/pupmod-simp-common"
+    compliance: "https://github.com/trevor-vaughan/pupmod-compliance"
     simplib: "git://github.com/simp/pupmod-simp-simplib"
     simpcat: "git://github.com/simp/pupmod-simp-concat"
     logrotate: "git://github.com/simp/pupmod-simp-logrotate"
