@@ -10,11 +10,11 @@
   "tags": [ "simp", "sudosh" ],
   "dependencies": [
     {
-      "name": "simp/common",
+      "name": "simp/simplib",
       "version_requirement": ">= 4.2.0"
     },
     {
-      "name": "simp/concat",
+      "name": "simp/simpcat",
       "version_requirement": ">= 4.0.0"
     },
     {
