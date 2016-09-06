@@ -28,7 +28,7 @@ class sudosh {
   }
 
   # named '0sudosh' so that it appears before the defaults
-  rsyslog::rule::local { '0sudosh':
+  rsyslog::rule::local { 'XX_sudosh':
     rule            => 'if ($programname == \'sudosh\') then',
     target_log_file => '/var/log/sudosh.log',
     stop_processing => true
