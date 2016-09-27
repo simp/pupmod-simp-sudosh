@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_0d039643",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1005361
+      },
+      "writtenOn": "2016-09-27T13:09:57Z",
+      "side": 1,
+      "message": "I think this module could use a little bit more explaination on what sudosh actually does. Maybe a link to http://simp.readthedocs.io/en/master/security_mapping/components/sudosh/session_audit/control.html?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 21
+      },
+      "revId": "a53f45cb8a274d84ec4dd27fa9b11db3d426d3d6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_ef487fce",
         "filename": "README.md",
         "patchSetId": 2
