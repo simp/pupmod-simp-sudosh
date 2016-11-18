@@ -1,7 +1,7 @@
 {
   "name": "simp-sudosh",
   "version": "4.1.2",
-  "author": "simp",
+  "author": "SIMP Team",
   "summary": "Manage sudosh",
   "license": "Apache-2.0",
   "source": "https://github.com/simp/pupmod-simp-sudosh",
