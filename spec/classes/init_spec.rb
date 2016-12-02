@@ -14,7 +14,7 @@ describe 'sudosh' do
         it { is_expected.to contain_package('sudosh2') }
 
         it do
-          is_expected.to contain_rsyslog__rule__local('0sudosh').with({
+          is_expected.to contain_rsyslog__rule__local('XX_sudosh').with({
             'rule' => "if ($programname == \'sudosh\') then",
             'target_log_file' => '/var/log/sudosh.log',
             'stop_processing' => true
