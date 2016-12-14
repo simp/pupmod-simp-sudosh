@@ -1,3 +1,7 @@
+* Wed Dec 14 2016 Liz Nemsick <lnemsick.simp@gmail.com> - 6.0.0-0
+- Use simp_options module for global catalysts
+- Use strong typed parameters
+
 * Thu Dec 01 2016 Nicholas Hughes, Nick Markowski <nmarkowski@keywcorp.com> - 5.0.1-0
 - Prevent log duplication and log where intended.
 - Changed naming to XX_ or YY_ to come before the default Z_default.conf
