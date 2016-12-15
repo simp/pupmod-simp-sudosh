@@ -28,12 +28,18 @@ sudosh-replay is used to replay the keystrokes of a session.
 
 ### What sudosh affects
 
-Sudosh installs sudosh, configures rsyslog for sudosh logging, and logrotates
-the sudosh user data
+Sudosh installs sudosh, and optionally configures rsyslog for sudosh logging
+and logrotates the sudosh user data.
 
 ### Setup Requirements
 
-`simp/rsyslog` and `simp/logrotate` must be present to use sudosh.
+To enable the rsyslog and logrotate features, set simp_options::syslog and 
+simp_options::logrotate to true in your hiera data. For example,
+```
+---
+ simp_options:syslog : true
+ simp_options:logrotate : true
+```
 
 ### Beginning with sudosh
 
