@@ -43,7 +43,7 @@ class sudosh (
     # Don't forget the logrotate rule!
     if $logrotate {
       include '::logrotate'
-      logrotate::add { 'sudosh':
+      logrotate::rule { 'sudosh':
         log_files  => [ '/var/log/sudosh.log' ],
         missingok  => true,
         lastaction => '/sbin/service rsyslog restart > /dev/null 2>&1 || true'
