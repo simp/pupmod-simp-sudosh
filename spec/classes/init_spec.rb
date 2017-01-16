@@ -14,7 +14,7 @@ describe 'sudosh' do
           it { is_expected.to compile.with_all_deps }
           it { is_expected.to contain_package('sudosh2') }
           it { is_expected.to_not contain_rsyslog__rule__local('XX_sudosh') }
-          it { is_expected.to_not contain_logrotate__add('sudosh') }
+          it { is_expected.to_not contain_logrotate__rule('sudosh') }
         end
   
         context 'with syslog and logrotate enabled' do
@@ -32,7 +32,7 @@ describe 'sudosh' do
           end
 
           it do
-            is_expected.to contain_logrotate__add('sudosh').with({
+            is_expected.to contain_logrotate__rule('sudosh').with({
               'log_files' => ['/var/log/sudosh.log'],
               'missingok' => true,
               'lastaction' => '/sbin/service rsyslog restart > /dev/null 2>&1 || true'
