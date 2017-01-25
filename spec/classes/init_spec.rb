@@ -16,7 +16,7 @@ describe 'sudosh' do
           it { is_expected.to_not contain_rsyslog__rule__local('XX_sudosh') }
           it { is_expected.to_not contain_logrotate__rule('sudosh') }
         end
-  
+
         context 'with syslog and logrotate enabled' do
           let(:params) {{ :syslog => true, :logrotate => true }}
           it { is_expected.to create_class('sudosh') }
@@ -25,7 +25,7 @@ describe 'sudosh' do
 
           it do
             is_expected.to contain_rsyslog__rule__local('XX_sudosh').with({
-              'rule' => "if ($programname == \'sudosh\') then",
+              'rule' => "$programname == \'sudosh\'",
               'target_log_file' => '/var/log/sudosh.log',
               'stop_processing' => true
             })

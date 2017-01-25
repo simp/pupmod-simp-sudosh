@@ -1,3 +1,6 @@
+* Mon Jan 23 2017 Nick Miller <nick.miller@onyxpoint.com> - 6.0.0
+- Updated rsyslog rule to remove logic
+
 * Wed Dec 14 2016 Liz Nemsick <lnemsick.simp@gmail.com> - 6.0.0-0
 - Use simp_options module for global catalysts
 - Use strong typed parameters
