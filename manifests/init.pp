@@ -45,9 +45,9 @@ class sudosh (
     if $logrotate {
       include '::logrotate'
       logrotate::rule { 'sudosh':
-        log_files  => [ '/var/log/sudosh.log' ],
-        missingok  => true,
-        lastaction => '/sbin/service rsyslog restart > /dev/null 2>&1 || true'
+        log_files                 => [ '/var/log/sudosh.log' ],
+        missingok                 => true,
+        lastaction_restart_logger => true
       }
     }
   }

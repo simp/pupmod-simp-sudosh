@@ -1,5 +1,8 @@
 require 'spec_helper'
 
+file_content_7 = "/usr/bin/systemctl restart rsyslog > /dev/null 2>&1 || true"
+file_content_6 = "/sbin/service rsyslog restart > /dev/null 2>&1 || true"
+
 describe 'sudosh' do
 
   context 'supported operating systems' do
@@ -33,11 +36,20 @@ describe 'sudosh' do
 
           it do
             is_expected.to contain_logrotate__rule('sudosh').with({
-              'log_files' => ['/var/log/sudosh.log'],
-              'missingok' => true,
-              'lastaction' => '/sbin/service rsyslog restart > /dev/null 2>&1 || true'
+              'log_files'                 => ['/var/log/sudosh.log'],
+              'missingok'                 => true,
+              'lastaction_restart_logger' => true
             })
           end
+
+          if ['RedHat','CentOS'].include?(facts[:operatingsystem])
+            if facts[:operatingsystemmajrelease].to_s < '7'
+              it { should create_file('/etc/logrotate.d/sudosh').with_content(/#{file_content_6}/)}
+            else
+              it { should create_file('/etc/logrotate.d/sudosh').with_content(/#{file_content_7}/)}
+            end
+          end
+
         end
       end
     end
