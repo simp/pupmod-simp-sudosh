@@ -1,6 +1,6 @@
 {
   "name": "simp-sudosh",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "author": "SIMP Team",
   "summary": "Manage sudosh",
   "license": "Apache-2.0",
@@ -50,10 +50,6 @@
     {
       "name": "puppet",
       "version_requirement": "4.x"
-    },
-    {
-      "name": "pe",
-      "version_requirement": ">= 2016.2.0"
     }
   ],
   "data_provider": "hiera"
