@@ -23,13 +23,14 @@
 # @author Trevor Vaughan <tvaughan@onyxpont.com>
 #
 class sudosh (
-  Boolean $syslog    = simplib::lookup('simp_options::syslog', { 'default_value' => false }),
-  Boolean $logrotate = simplib::lookup('simp_options::logrotate', { 'default_value' => false })
+  Boolean $syslog         = simplib::lookup('simp_options::syslog', { 'default_value' => false }),
+  Boolean $logrotate      = simplib::lookup('simp_options::logrotate', { 'default_value' => false }),
+  String  $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
 ) {
 
   # This package is from the SIMP repo
   package { 'sudosh2':
-    ensure => 'latest'
+    ensure => $package_ensure
   }
 
   if $syslog {
