@@ -1,3 +1,7 @@
+* Thu Mar 07 2019 Liz Nemsick <lnemsick.simp@gmail.com> - 6.1.1-0
+- Update the upper bound of stdlib to < 6.0.0
+- Update a URL in the README.md
+
 * Fri Oct 12 2018 Nick Miller <nick.miller@onyxpoint.com> - 6.1.0-0
 - Added $package_ensure parameter
   - Changed the package from 'latest' to 'installed'
