@@ -1,3 +1,6 @@
+* Sat Dec 19 2020 Chris Tessmer <chris.tessmer@onyxpoint.com> - 6.2.2
+- Removed EL6 support
+
 * Thu Jul 23 2020  <jeannegreulich@onyxpoint.com> - 6.2.1-0
 - Update the upper bounds for simplib in metadata
 
