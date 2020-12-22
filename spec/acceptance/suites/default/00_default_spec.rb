@@ -13,8 +13,7 @@ describe 'sudosh' do
     context "on #{host}" do
       context 'default parameters' do
         it 'should enable SIMP dependencies repo for sudosh package' do
-          # exclude SIMP repo, as we only want the SIMP deps repo
-          install_simp_repos(host, ['simp'])
+          install_simp_repos(host)
         end
 
         it 'should work with no errors' do
