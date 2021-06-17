@@ -1,10 +1,10 @@
 ---
 fixtures:
   repositories:
-    logrotate: https://github.com/simp/pupmod-simp-logrotate
-    rsyslog: https://github.com/simp/pupmod-simp-rsyslog
-    simplib: https://github.com/simp/pupmod-simp-simplib
-    stdlib: https://github.com/simp/puppetlabs-stdlib
-    systemd: https://github.com/simp/puppet-systemd
+    logrotate: https://github.com/simp/pupmod-simp-logrotate.git
+    rsyslog: https://github.com/simp/pupmod-simp-rsyslog.git
+    simplib: https://github.com/simp/pupmod-simp-simplib.git
+    stdlib: https://github.com/simp/puppetlabs-stdlib.git
+    systemd: https://github.com/simp/puppet-systemd.git
   symlinks:
     sudosh: "#{source_dir}"
