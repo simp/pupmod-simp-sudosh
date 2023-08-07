@@ -1,6 +1,6 @@
 {
   "name": "simp-sudosh",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "author": "SIMP Team",
   "summary": "Manage sudosh",
   "license": "Apache-2.0",
@@ -34,23 +34,32 @@
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "Rocky",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "AlmaLinux",
       "operatingsystemrelease": [
         "8"
       ]
