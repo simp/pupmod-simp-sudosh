@@ -4,7 +4,7 @@ test_name 'sudosh'
 
 describe 'sudosh' do
   let(:manifest) do
-    <<-EOS
+    <<~EOS
       include 'sudosh'
     EOS
   end
