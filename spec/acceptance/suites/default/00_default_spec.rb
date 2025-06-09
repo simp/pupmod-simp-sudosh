@@ -16,6 +16,7 @@ describe 'sudosh' do
           install_simp_repos(host)
         end
 
+        # rubocop:disable RSpec/RepeatedExample
         it 'works with no errors' do
           apply_manifest_on(host, manifest, catch_failures: true)
         end
@@ -23,6 +24,7 @@ describe 'sudosh' do
         it 'is idempotent' do
           apply_manifest_on(host, manifest, catch_failures: true)
         end
+        # rubocop:enable RSpec/RepeatedExample
 
         it 'has sudosh2 installed' do
           expect(check_for_package(host, 'sudosh2')).to be true
